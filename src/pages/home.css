@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #f8f8f8;
+  color: #000;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-text {
+  font-weight: 700;
+  color: #006b44;
+}
+
+nav a {
+  margin-left: 2rem;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
+
+.hero {
+  background: #001330;
+  padding: 4rem 2rem 10rem;
+  color: white;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.card-section {
+  display: flex;
+  justify-content: space-around;
+  margin-top: -6rem;
+  padding: 10rem 2rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+}
+
+.card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 280px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  color: #003e78;
+  margin-bottom: 1rem;
+}
+
+.card ul {
+  margin: 1rem 0;
+  padding-left: 1rem;
+}
+
+.card li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.apply-btn {
+  background: #43c259;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+footer {
+  background: #fff;
+  padding: 2rem;
+  margin-top: 3rem;
+  border-top: 1px solid #ccc;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+
+footer div {
+  margin-bottom: 1rem;
+  max-width: 300px;
+}
+
+footer a {
+  display: block;
+  color: #000;
+  text-decoration: none;
+  margin-bottom: 0.3rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+}
