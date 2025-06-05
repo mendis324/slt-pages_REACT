@@ -8,6 +8,7 @@ import tw from '../images/tw.PNG';
 import ig from '../images/ig.PNG';
 import linkin from '../images/linkin.PNG';
 import yt from '../images/yt.PNG';
+import LOgin from '../pages/Login.jsx'
 
 const Home = () => {
   return (
@@ -21,7 +22,7 @@ const Home = () => {
           <a href="#">Home</a>
           <a href="#">About Us</a>
           <a href="#">Vacancies</a>
-          <a href="#">Login</a>
+          <a href="/pages/Login.jsx">Login</a>
         </nav>
       </header>
 

@@ -1,5 +1,6 @@
-import './App.css';
-import Home from './pages/home.js'; 
+import React from 'react';
+import Home from './pages/home.js';
+
 function App() {
   return (
     <div className="App">
