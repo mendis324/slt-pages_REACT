@@ -1,4 +1,7 @@
 import React from "react";
+import login from '../images/login.png';
+import fb from '../images/fb.PNG';
+import gogle from '../images/google.png';
 
 const Login = () => {
   return (
@@ -17,7 +20,6 @@ const Login = () => {
         fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
       }}
     >
-      {/* Left: Login Form */}
       <div
         className="form-container"
         style={{
@@ -99,7 +101,10 @@ const Login = () => {
           </button>
 
           <div className="signup-link" style={{ marginTop: "1rem", fontSize: "0.9rem", color: "white" }}>
-            Don't you have account? <a href="signup.html" style={{ color: "white", fontWeight: "bold", textDecoration: "none" }}>SignUp</a>
+            Don't have an account?{" "}
+            <a href="/signup" style={{ color: "white", fontWeight: "bold", textDecoration: "none" }}>
+              Sign Up
+            </a>
           </div>
 
           <div
@@ -117,30 +122,13 @@ const Login = () => {
             <div style={{ flex: 1, height: "1px", background: "white", marginLeft: "-1.5rem" }}></div>
           </div>
 
-          <div
-            className="social-buttons"
-            style={{
-              display: "flex",
-              gap: "1rem",
-              justifyContent: "center",
-            }}
-          >
-            {/* Replace with your actual images */}
-            <img
-              src="/path-to-your-images/google.png"
-              alt="Google Login"
-              style={{ height: "40px", width: "40px", cursor: "pointer" }}
-            />
-            <img
-              src="/path-to-your-images/fb-logo.png"
-              alt="Facebook Login"
-              style={{ height: "40px", width: "40px", cursor: "pointer" }}
-            />
+          <div className="social-buttons" style={{ display: "flex", gap: "1rem", justifyContent: "center" }}>
+            <img src={gogle} alt="Google Login" style={{ height: "40px", width: "40px", cursor: "pointer" }} />
+            <img src={fb} alt="Facebook Login" style={{ height: "40px", width: "40px", cursor: "pointer" }} />
           </div>
         </form>
       </div>
 
-      {/* Right: Illustration */}
       <div
         className="image-container"
         style={{
@@ -153,12 +141,7 @@ const Login = () => {
           borderRadius: "0 20px 20px 0",
         }}
       >
-        {/* Replace with your actual illustration image */}
-        <img
-          src="/images/login.png"
-          alt="Login Illustration"
-          style={{ maxWidth: "100%", height: "auto" }}
-        />
+        <img src= {login} alt="Login Illustration" style={{ maxWidth: "100%", height: "auto" }} />
       </div>
     </div>
   );

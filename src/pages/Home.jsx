@@ -1,6 +1,7 @@
 // src/pages/Home.jsx
 import React from 'react';
 import './home.css';
+import { Link } from 'react-router-dom';
 import heroImage from '../images/image.png';
 import logo from '../images/home.PNG';
 import fb from '../images/fb.PNG';
@@ -8,7 +9,50 @@ import tw from '../images/tw.PNG';
 import ig from '../images/ig.PNG';
 import linkin from '../images/linkin.PNG';
 import yt from '../images/yt.PNG';
-import LOgin from '../pages/Login.jsx'
+
+const cards = [
+  {
+    title: 'Trainee Network Engineers',
+    description:
+      'We are hiring new training network engineers for SLTMobitel... fresh graduates are preferred.',
+    requirements: [
+      'No job experiences are needed.',
+      'Networking knowledge.',
+      'Operating systems knowledge.',
+      'Network devices and security knowledge.',
+      'Networking device configuration knowledge.',
+    ],
+  },
+  {
+    title: 'ACCOUNTANT-FINANCIAL ACCOUNTING',
+    description:
+      'Sri Lanka Telecom is in search of high caliber, result-oriented and qualified individuals... operational controls.',
+    requirements: [
+      'Associate Membership of ICASL/ACCA/CIMA',
+      'Preference to prize winners',
+      'Interpersonal and communication skills',
+    ],
+  },
+  {
+    title: 'ENGINEERS',
+    description:
+      'As an Engineer of the pioneering ICT solutions provider... maintaining our state of the art ICT infrastructure.',
+    requirements: [
+      'Four-year Engineering Degree',
+      'Associate Member of IESL',
+      'Knowledge in Cloud, Cybersecurity, and Digital Platforms',
+    ],
+  },
+  {
+    title: 'TECHNICIANS',
+    description:
+      'Technicians are mainly responsible in install, maintain and repair electronic communications equipment...',
+    requirements: [
+      '6 O/L passes with English and Maths',
+      'NVQ Level 4 certification',
+    ],
+  },
+];
 
 const Home = () => {
   return (
@@ -22,7 +66,7 @@ const Home = () => {
           <a href="#">Home</a>
           <a href="#">About Us</a>
           <a href="#">Vacancies</a>
-          <a href="/pages/Login.jsx">Login</a>
+          <Link to="/login">Login</Link>
         </nav>
       </header>
 
@@ -85,49 +129,5 @@ const Home = () => {
     </div>
   );
 };
-
-const cards = [
-  {
-    title: 'Trainee Network Engineers',
-    description:
-      'We are hiring new training network engineers for SLTMobitel... fresh graduates are preferred.',
-    requirements: [
-      'No job experiences are needed.',
-      'Networking knowledge.',
-      'Operating systems knowledge.',
-      'Network devices and security knowledge.',
-      'Networking device configuration knowledge.',
-    ],
-  },
-  {
-    title: 'ACCOUNTANT-FINANCIAL ACCOUNTING',
-    description:
-      'Sri Lanka Telecom is in search of high caliber, result-oriented and qualified individuals... operational controls.',
-    requirements: [
-      'Associate Membership of ICASL/ACCA/CIMA',
-      'Preference to prize winners',
-      'Interpersonal and communication skills',
-    ],
-  },
-  {
-    title: 'ENGINEERS',
-    description:
-      'As an Engineer of the pioneering ICT solutions provider... maintaining our state of the art ICT infrastructure.',
-    requirements: [
-      'Four-year Engineering Degree',
-      'Associate Member of IESL',
-      'Knowledge in Cloud, Cybersecurity, and Digital Platforms',
-    ],
-  },
-  {
-    title: 'TECHNICIANS',
-    description:
-      'Technicians are mainly responsible in install, maintain and repair electronic communications equipment...',
-    requirements: [
-      '6 O/L passes with English and Maths',
-      'NVQ Level 4 certification',
-    ],
-  },
-];
 
 export default Home;
