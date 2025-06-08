@@ -2,6 +2,7 @@ import React from "react";
 import login from '../images/login.png';
 import fb from '../images/fb.PNG';
 import gogle from '../images/google.png';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   return (
@@ -102,9 +103,12 @@ const Login = () => {
 
           <div className="signup-link" style={{ marginTop: "1rem", fontSize: "0.9rem", color: "white" }}>
             Don't have an account?{" "}
-            <a href="/signup" style={{ color: "white", fontWeight: "bold", textDecoration: "none" }}>
-              Sign Up
-            </a>
+            <Link to="/signup"
+            style={{ color: "white", fontWeight: "bold", textDecoration: "none" }}>
+            Sign Up
+            </Link>
+
+            
           </div>
 
           <div

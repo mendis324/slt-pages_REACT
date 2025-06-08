@@ -64,7 +64,7 @@ const Home = () => {
         </div>
         <nav>
           <a href="#">Home</a>
-          <a href="#">About Us</a>
+          <Link to="/AboutUs">About Us</Link>
           <a href="#">Vacancies</a>
           <Link to="/login">Login</Link>
         </nav>
