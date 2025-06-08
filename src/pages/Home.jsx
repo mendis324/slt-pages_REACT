@@ -65,7 +65,7 @@ const Home = () => {
         <nav>
           <a href="#">Home</a>
           <Link to="/AboutUs">About Us</Link>
-          <a href="#">Vacancies</a>
+          <Link to="/UserJobInfo">Vacancies</Link>
           <Link to="/login">Login</Link>
         </nav>
       </header>
