@@ -82,10 +82,11 @@ const Login = () => {
             />
           </div>
 
-          <button
-            type="submit"
-            className="sign-in-btn"
-            style={{
+        <Link to="/createjob" style={{ textDecoration: 'none' }}>
+           <button
+              type="button"
+              className="sign-in-btn"
+              style={{
               width: "100%",
               backgroundColor: "white",
               color: "#0056a3",
@@ -96,10 +97,13 @@ const Login = () => {
               fontWeight: "bold",
               cursor: "pointer",
               marginTop: "1rem",
-            }}
-          >
-            Sign In
+              }}
+           >
+        Sign In
           </button>
+        </Link>
+
+
 
           <div className="signup-link" style={{ marginTop: "1rem", fontSize: "0.9rem", color: "white" }}>
             Don't have an account?{" "}

@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import logo from '../images/home.PNG';
+import { Link } from 'react-router-dom';
 
 const UserJobInfo = () => {
   useEffect(() => {
@@ -127,7 +128,7 @@ const UserJobInfo = () => {
         </div>
         <div style={styles.navbarRight}>
           <a href="applied job status for user.html" style={styles.link}>Job status</a>
-          <a href="user vaccency form.html" style={styles.link}>Apply for job</a>
+          <Link to="/apply" style={styles.link}>Apply for job</Link>
           <a href="user job infor.html" style={styles.link}>jobs for you</a>
           <a href="home.html" style={styles.link}>Home</a>
           <a href="login.html" style={styles.link}>Login</a>
